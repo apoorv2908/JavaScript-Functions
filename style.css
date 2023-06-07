@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Sura&display=swap');
+
+.header{
+    width: auto;
+    border: 1px solid black;
+    font-size: 250%;
+    text-align: center;
+    font-family: 'Sura', serif;
+    background-color: darksalmon;
+}
+body{
+    background-color: navajowhite;
+}
+p{
+    font-family: 'Sura', serif;
+    font-size: 100%;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+pre{
+    font-family: 'Sura', serif;
+    font-size: medium;
+    margin-left: 15px;
+}
+
+.ques{
+    font-style: italic;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.day2{
+    text-align: center;
+    font-size: 120%;
+}

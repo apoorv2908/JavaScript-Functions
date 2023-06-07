@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href= "./style.css">
+</head>
+<body>
+    <div class= "header">JavaScript Assignment - Functions</div>
+    <br>
+    <p>Question 1: Create one function with zero parameter having a console statement</p>
+    <pre>function print(){
+        console.log("hii this is my first function")}
+    </pre>
+    <hr>
+
+    <p>Question 2:  Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</p>
+    <pre>
+        function sum (num1, num2) {
+            let add = num1 + num2;
+            return "Sum of " + num1 + " and " + num2 + " is " + add}
+    </pre><hr>
+
+    <p>Question 3: Create one arrow function</p>
+    <pre>
+        let sum = (a, b) => {
+            let result = a + b;
+            return result;}
+    </pre>
+    <hr>
+
+    <p>Question 4: Print output: </p>
+    <div class= "ques">
+        <pre>
+            var x = 21;
+            var girl = function () {
+                console.log(x);
+                var x = 20;
+            };
+            girl ();
+        </pre>
+    </div>
+        <pre>Undefined</pre>
+    <hr>
+
+    <p>Question 5: Print Output</p>
+    <div class= "ques">
+        <pre>
+            var x = 21;
+            girl ();
+            console.log(x)
+            function girl() {
+                console.log(x);
+                var x = 20;
+            };
+        </pre>
+    </div>
+    <pre>Undefined
+        21
+    </pre>
+    <hr>
+
+    <p>Question 6: Print Output</p>
+    <div class= "ques">
+        <pre>
+            var x = 21;
+            a();
+            b();
+
+            function a() {
+                x = 20;
+                console.log(x);
+            };
+            function b() {
+                x = 40;
+                console.log(x);
+            };
+
+        </pre>
+    </div>
+    <pre>
+        20
+        40
+    </pre>
+
+    <hr>
+
+    <p>Question 7: Write a function that accepts parameter n and returns factorial of n</p>
+    <pre>
+    function factorial(n)
+    {
+        var result = 1, i;
+        for (let i = 2; i <= n; i++){
+            result *= i;
+        }
+        return result;
+    }
+    </pre>
+    <hr>
+
+    <p class= "day2">Day-2</p>
+    <hr>
+
+    <p>Question 1: Guess the output</p>
+    <div class= "ques">
+        <pre>
+            function FindSum(a, b){
+                return a + b;
+            }
+            
+            function DisplayData(data, batch){
+                console.log(`i am from ${data} and My batch is EA${batch}`)
+            }
+            
+            DisplayData("PrepBytes", FindSum(10, 9));        
+        </pre>
+    </div>
+
+    <pre>i am from PrepBytes and My batch is EA19</pre>
+
+    <hr>
+    <p>Question 2: Guess the output</p>
+    <div class= "ques">
+        <pre>
+            Abc();
+            const Abc = function(){
+                let value = 20;
+                console.log(value);
+        }
+            </pre>
+    </div>
+    <pre>Error</pre>
+    <hr>
+
+    <p>Question 3: Guess the output</p>
+    <div class= "ques">
+        <pre>
+            var a = 10;
+            (function (){
+                console.log(a);
+                var a = 20;
+            })();
+            </pre>
+    </div>
+
+    <pre>Undefined</pre>
+
+    <hr>
+
+    <p>Question 4: Guess the output</p>
+    <div class= "ques">
+
+        <pre>
+            const greet =  function(name){
+                return function(m){
+                    console.log(`Hi!! ${name}, ${m}`);
+                    }
+                }
+            const greet_message = greet('EA19');
+            greet_message("Welcome To PrepBytes")
+            </pre>
+
+    </div>
+    <pre>Hi!! EA19, Welcome To PrepBytes</pre>
+    <script src= "./index.js"></script>
+</body>
+</html>
